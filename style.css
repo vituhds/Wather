@@ -173,7 +173,7 @@ background: #273859;
     opacity: 0;
 }
 
-.fade-in{
+.fadeIn{
     animation:  0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
@@ -183,6 +183,31 @@ background: #273859;
         scale: 1;
         opacity: 1;
 
+    }
+}
+
+@media screen and (max-height:570px) {
+    .weather-box img {
+        width: 40%;
+        margin-top: 20px;
+    }
+    .container{
+        height: 500px !important;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container{
+        width: 300px;
+    }
+
+    .wind{
+        padding-left: 10px;
+    }
+
+    .humidity{
+        padding-left: -9px;
+        justify-content: flex-start;
     }
 }
 
