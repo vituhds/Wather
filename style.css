@@ -1,32 +1,105 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.main{
-    width: 100vw;
-    height: 100vh;
-    background-color: #012840;
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #273859;
+}
+
+.container{
+    position: relative;
+    height: 605px;
+    width: 400px;
+    background-color: #fff ;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
-/* .card{
-    background-color: gray;
-    height: 70%;
-    width: 25%;
-} */
+.search-box input{
+    color: #06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
 
-.card {
-    height: 70%;
-    width: 25%;
-    margin: 0 auto;
-    background-color: #F8FBFE;
-    border-radius: 8px;
-    z-index: 1;
-   }
-   
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .4s ease;
+}
+
+.search-box button:hover{
+    color: white;
+    background-color: #06283D;
+}
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top:30px 
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+
+/*    
    .header {
     display: flex;
     align-items: center;
@@ -57,4 +130,4 @@ body{
    .green {
     background-color: #00ca4e;
    }
-   
+    */
