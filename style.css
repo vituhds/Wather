@@ -191,24 +191,13 @@ background: #273859;
         width: 40%;
         margin-top: 20px;
     }
-    .container{
-        height: 500px !important;
-    }
 }
 
 @media screen and (max-width:440px) {
     .container{
-        width: 300px;
+        width: 320px;
     }
 
-    .wind{
-        padding-left: 10px;
-    }
-
-    .humidity{
-        padding-left: -9px;
-        justify-content: flex-start;
-    }
 }
 
 /*    
